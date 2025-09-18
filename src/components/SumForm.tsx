@@ -16,14 +16,14 @@ const SumForm: React.FC<SumFormProps> = ({ onSum }) => {
     return (
         <form onSubmit={handleSubmit}>
         <div>
-            <label>Number 1:</label>
+            <label>Numero 1 :</label>
             <input type="number" 
             value={num1} 
             onChange={(e) => setNum1(Number(e.target.value))} 
             />
         </div>
         <div>
-            <label>Number 2:</label>
+            <label>Numero 2 :</label>
             <input type="number" 
             value={num2} 
             onChange={(e) => setNum2(Number(e.target.value))} 
