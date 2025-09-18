@@ -2,8 +2,20 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+
+
+// ts
+//html
+//css
+interface ResultProps {
+  value: number;
+}
+
+const Result: React.FC<ResultProps> = ({ value }) => {
+  return <div>
+    <h2> Resultado : {value} </h2>
+    </div>;
+}
+
+export default Result;
+
